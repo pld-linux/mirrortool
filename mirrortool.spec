@@ -18,11 +18,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Program takes list of mirror sites from MIRRORS[.gz] file and allows
-to processing it by extension modules. Available modules: 
+to processing it by extension modules. Available modules:
 
 * mod_poldek - module to configure poldek (http://poldek.pld.org.pl/)
   sources
-* mod_xml_pldoc - module to generate PLD-Guide 
+* mod_xml_pldoc - module to generate PLD-Guide
   (http://cvs.pld.org.pl/PLD-Guide/) document with list of PLD mirrors
 * mod_html  - module to generate simple HTML document
 
