@@ -8,6 +8,7 @@ Version:	0.1
 Release:	2
 License:	GPL
 Source0:	http://team.pld.org.pl/~mis/download/%{name}-%{version}.tar.gz
+# Source0-md5:	4c1c591fb2563dae351d1dae2b7fa77f
 Group:		Applications/System
 Requires:	python >= 2.0
 Requires:	python-modules
