@@ -8,6 +8,7 @@ License:	GPL
 Group:		Applications/System
 Source0:	http://team.pld.org.pl/~mis/download/%{name}-%{version}.tar.gz
 # Source0-md5:	4c1c591fb2563dae351d1dae2b7fa77f
+BuildRequires:	perl-base
 BuildRequires:	python-devel >= 1.5.2
 Requires:	python >= 2.0
 Requires:	python-modules
@@ -57,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc MIRRORS README
-%{_sysconfdir}/%{name}.conf
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/%{name}.conf
 %attr(755,root,root) %{_bindir}/%{name}
 %dir %{_libdir}/%{name}
 %attr(755,root,root) %{_libdir}/%{name}/*.sh
