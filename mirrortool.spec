@@ -51,14 +51,12 @@ rm -rf $RPM_BUILD_ROOT
 
 make install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf MIRRORS README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc MIRRORS README
 %{_sysconfdir}/%{name}.conf
 %attr(755,root,root) %{_bindir}/%{name}
 %dir %{_libdir}/%{name}
