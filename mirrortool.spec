@@ -41,7 +41,7 @@ pozwala na jej przetworzenie przez zewnêtrzne modu³y. Dostêpne modu³y:
 %build
 # distribute in source form cause to program alpha stage --
 # sources are easier to read and fix.
-#%{py_comp} .
+#%%{py_comp} .
 
 # while waiting for http://ftp.pld.org.pl/MIRRORS.gz...
 perl -pi -e 's|^\s*url\s*=.+|url = http://team.pld.org.pl/~mis/pld/MIRRORS.gz|' %{name}.conf
