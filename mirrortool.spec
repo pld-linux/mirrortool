@@ -5,7 +5,7 @@ Summary:	Mirrors management tool
 Summary(pl):	Narzêdzie do zarz±dzania mirrorami
 Name:		mirrortool
 Version:	0.1
-Release:	1
+Release:	2
 License:	GPL
 Source0:	http://team.pld.org.pl/~mis/download/%{name}-%{version}.tar.gz
 Group:		Applications/System
