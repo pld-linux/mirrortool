@@ -1,18 +1,16 @@
-
 #%include	/usr/lib/rpm/macros.python
-
 Summary:	Mirrors management tool
 Summary(pl):	Narzêdzie do zarz±dzania mirrorami
 Name:		mirrortool
 Version:	0.1
 Release:	2
 License:	GPL
+Group:		Applications/System
 Source0:	http://team.pld.org.pl/~mis/download/%{name}-%{version}.tar.gz
 # Source0-md5:	4c1c591fb2563dae351d1dae2b7fa77f
-Group:		Applications/System
+BuildRequires:	python-devel >= 1.5.2
 Requires:	python >= 2.0
 Requires:	python-modules
-BuildRequires:	python-devel >= 1.5.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -45,12 +43,13 @@ pozwala na jej przetworzenie przez zewnêtrzne modu³y. Dostêpne modu³y:
 #%%{py_comp} .
 
 # while waiting for http://ftp.pld.org.pl/MIRRORS.gz...
-perl -pi -e 's|^\s*url\s*=.+|url = http://team.pld.org.pl/~mis/pld/MIRRORS.gz|' %{name}.conf
+%{__perl} -pi -e 's|^\s*url\s*=.+|url = http://team.pld.org.pl/~mis/pld/MIRRORS.gz|' %{name}.conf
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-make install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -62,4 +61,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/%{name}
 %dir %{_libdir}/%{name}
 %attr(755,root,root) %{_libdir}/%{name}/*.sh
-%attr(644,root,root) %{_libdir}/%{name}/*.py*
+%{_libdir}/%{name}/*.py*
