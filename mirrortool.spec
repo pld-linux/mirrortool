@@ -10,8 +10,8 @@ Source0:	http://team.pld.org.pl/~mis/download/%{name}-%{version}.tar.gz
 # Source0-md5:	4c1c591fb2563dae351d1dae2b7fa77f
 BuildRequires:	perl-base
 BuildRequires:	python-devel >= 1.5.2
-Requires:	python >= 2.0
 Requires:	python-modules
+Requires:	python >= 2.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
