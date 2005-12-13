@@ -19,21 +19,21 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Program takes list of mirror sites from MIRRORS[.gz] file and allows
 to processing it by extension modules. Available modules:
 
-* mod_poldek - module to configure poldek (http://poldek.pld.org.pl/)
+- mod_poldek - module to configure poldek (http://poldek.pld.org.pl/)
   sources
-* mod_xml_pldoc - module to generate PLD-Guide
+- mod_xml_pldoc - module to generate PLD-Guide
   (http://cvs.pld.org.pl/PLD-Guide/) document with list of PLD mirrors
-* mod_html  - module to generate simple HTML document
+- mod_html - module to generate simple HTML document
 
 %description -l pl
 Program pobiera listê serwerów lustrzanych z pliku MIRRORS[.gz] i
 pozwala na jej przetworzenie przez zewnêtrzne modu³y. Dostêpne modu³y:
 
-* mod_poldek - modu³ do konfiguracji poldka
+- mod_poldek - modu³ do konfiguracji poldka
   (http://poldek.pld.org.pl/)
-* mod_xml_pldoc - modu³ do generowania dokumentu PLD-Guide
+- mod_xml_pldoc - modu³ do generowania dokumentu PLD-Guide
   (http://cvs.pld.org.pl/PLD-Guide/) z list± mirrorów PLD
-* mod_html - modu³ do generowania prostego dokumentu HTML.
+- mod_html - modu³ do generowania prostego dokumentu HTML.
 
 %prep
 %setup -q
