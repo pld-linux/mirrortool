@@ -1,6 +1,6 @@
 #%include	/usr/lib/rpm/macros.python
 Summary:	Mirrors management tool
-Summary(pl):	Narzêdzie do zarz±dzania mirrorami
+Summary(pl.UTF-8):   NarzÄ™dzie do zarzÄ…dzania mirrorami
 Name:		mirrortool
 Version:	0.1
 Release:	2
@@ -25,15 +25,15 @@ to processing it by extension modules. Available modules:
   (http://cvs.pld.org.pl/PLD-Guide/) document with list of PLD mirrors
 - mod_html - module to generate simple HTML document
 
-%description -l pl
-Program pobiera listê serwerów lustrzanych z pliku MIRRORS[.gz] i
-pozwala na jej przetworzenie przez zewnêtrzne modu³y. Dostêpne modu³y:
+%description -l pl.UTF-8
+Program pobiera listÄ™ serwerÃ³w lustrzanych z pliku MIRRORS[.gz] i
+pozwala na jej przetworzenie przez zewnÄ™trzne moduÅ‚y. DostÄ™pne moduÅ‚y:
 
-- mod_poldek - modu³ do konfiguracji poldka
+- mod_poldek - moduÅ‚ do konfiguracji poldka
   (http://poldek.pld.org.pl/)
-- mod_xml_pldoc - modu³ do generowania dokumentu PLD-Guide
-  (http://cvs.pld.org.pl/PLD-Guide/) z list± mirrorów PLD
-- mod_html - modu³ do generowania prostego dokumentu HTML.
+- mod_xml_pldoc - moduÅ‚ do generowania dokumentu PLD-Guide
+  (http://cvs.pld.org.pl/PLD-Guide/) z listÄ… mirrorÃ³w PLD
+- mod_html - moduÅ‚ do generowania prostego dokumentu HTML.
 
 %prep
 %setup -q
