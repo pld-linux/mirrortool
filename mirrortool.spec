@@ -1,4 +1,3 @@
-#%include	/usr/lib/rpm/macros.python
 Summary:	Mirrors management tool
 Summary(pl.UTF-8):	Narzędzie do zarządzania mirrorami
 Name:		mirrortool
